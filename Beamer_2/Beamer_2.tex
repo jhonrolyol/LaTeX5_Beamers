@@ -1,0 +1,165 @@
+%--------------------------------------------------------------
+%                       Template - Beamer 2
+% Author: J.R.
+% Date: August 18, 2022
+%--------------------------------------------------------------
+
+\documentclass[aspectratio=169,11pt]{beamer} 
+
+%------------------------------ Preamble------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{latexsym,amsmath,amssymb,amsfonts, amsbsy} 
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{ragged2e}
+\usepackage{float}
+\usepackage{pifont} 
+\usepackage{mathrsfs}
+\usepackage{pstricks,pst-node}
+\usepackage{tikz}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{tikz-dimline}
+\usepackage{ragged2e}
+\newtheorem{Demos}{Demostración}
+\usepackage{multicol}
+%Temas
+%\usetheme{Warsaw}
+%\usetheme{AnnArbor}
+%\usetheme{CambridgeUS}
+\usetheme{madrid}
+\title[Title]{Title}
+%\title[Econometrics and Economic Data]{\textcolor{red}{Chapter 1}}
+\date{\today}
+\subtitle{Subtitle}
+% \logo{\includegraphics[]{}}
+\author[]{Author - Name}  
+\institute[University-Faculty-School]{
+        {\large \textbf{University}} %
+       \\%
+        {\large \textbf{Faculty}} %
+          \\%
+       {\large \textbf{Professional School}}\\
+       \vspace{4mm} 
+       \begin{center}
+            {\large course (acronym) } \\ 
+            {\large Teacher's name}
+       \end{center}
+     } 
+%  \logo{\includegraphics[scale = 0.09]{Imagenes/unsch (6).jpg} }  
+% \date{}
+% \subject{}
+% \setbeamercovered{transparent}
+% \setbeamertemplate{navigation symbols }{}
+\AtBeginSection[]
+{
+	\begin{frame}<beamer>{Contents}
+		\tableofcontents[currentsection,currentsubsection]
+	\end{frame}
+}
+
+%=== AtBeginSubsection
+\AtBeginSubsection[]
+{
+	\begin{frame}<beamer>{Contents}
+		\tableofcontents[currentsection,currentsubsection]
+	\end{frame}
+}
+
+
+%------------------------------ Main----------------------------------
+
+\begin{document}
+
+
+  \begin{frame}[t] % usar plain
+    \maketitle
+  \end{frame}
+  
+  \begin{frame}[t,plain]{Table of Contents}
+   	\tableofcontents
+  \end{frame}
+  
+  
+% Section 1
+\section{Section 1}
+
+  \begin{frame}[t,plain]{Section 1}
+    \lipsum[1]
+  \end{frame}
+   
+   
+   
+   
+% Section 2 
+\section{Section 2}
+
+   \begin{frame}[t,plain]{Section 2 }
+   	 \lipsum[1]
+   \end{frame}
+
+
+  %% Subsection 2.1
+  \subsection{Subsection 2.1}
+  \begin{frame}{Subsection 2.1}
+  	\lipsum[1]
+  \end{frame}
+  
+  %% Subsection 2.2
+  \subsection{Subsection 2.2}
+  \begin{frame}{Subsection 2.2}
+  	\lipsum[1]
+  \end{frame}
+
+
+  %% Subsection 2.3
+  \subsection{Subsection 2.3}
+  \begin{frame}{Subsection 2.3}
+  	\lipsum[1]
+  \end{frame}
+  
+  
+  %% Subsection 2.4
+  \subsection{Subsection 2.4}
+  \begin{frame}{Subsection 2.4}
+  	\lipsum[1]
+  \end{frame}
+  
+     
+  %% Subsection 2.5
+  \subsection{Subsection 2.5}
+  \begin{frame}{Subsection 2.5}
+  	\lipsum[1]
+  \end{frame}
+  
+
+
+
+
+% Section 3
+\section{Section 3}
+
+\begin{frame}[t,plain]{Section 3}
+	\lipsum[1]
+\end{frame}
+
+
+
+
+
+
+
+%%%%%%%%%%%%% References %%%%%%%%%%%%%%%% 
+\begin{frame}[t, plain]{References}
+  \begin{itemize}
+    \item Ref 1
+    \item Ref 2
+    \item Ref 3, etc.
+  \end{itemize}
+\end{frame}
+    
+    
+
+    
+\end{document}

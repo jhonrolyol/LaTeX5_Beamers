@@ -1,0 +1,164 @@
+%--------------------------------------------------------------
+%                       Template - Beamer 1
+% Author: J.R.
+% Date: August 6, 2022
+%--------------------------------------------------------------
+
+
+\documentclass[aspectratio=169,11pt]{beamer} 
+
+%------------------------------ Preamble------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{latexsym,amsmath,amssymb,amsfonts, amsbsy} 
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{ragged2e}
+\usepackage{float}
+\usepackage{pifont} 
+\usepackage{mathrsfs}
+\usepackage{pstricks,pst-node}
+\usepackage{tikz}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{tikz-dimline}
+\usepackage{ragged2e}
+\newtheorem{Demos}{Demostration}
+\usepackage{multicol}
+%\usetheme{Warsaw}
+% \usetheme{AnnArbor}
+\usetheme{CambridgeUS}
+\title[T]{\textcolor{red}{Title}}
+\date{\today}
+\subtitle{Subtitle}
+% \logo{\includegraphics[]{}}
+%%%%%%%%%%%%%%%%%%%%
+\author[]{Author - Name}  
+\institute[University-Faculty-School]{
+        {\large \textbf{University}} %
+       \\%
+        {\large \textbf{Faculty} } %
+          \\%
+       {\large \textbf{Professional School}}\\
+       \begin{center}
+        {\large course (acronym)} \vspace{2mm} \\
+        {\large Teacher's name }
+       \end{center}
+     } 
+%  \logo{\includegraphics[scale = 0.09]{Imagenes/unsch (6).jpg} }  
+% \date{}
+% \subject{}
+% \setbeamercovered{transparent}
+% \setbeamertemplate{navigation symbols }{}
+
+% === AtBeginSubsection
+\AtBeginSection[]
+{
+	\begin{frame}<beamer>{Contenido}
+		\tableofcontents[currentsection,currentsubsection]
+	\end{frame}
+}
+% === AtBeginSubsection
+\AtBeginSubsection[]
+{
+	\begin{frame}<beamer>{Contenido}
+		\tableofcontents[currentsection,currentsubsection]
+	\end{frame}
+}
+
+
+
+%------------------------------ Main----------------------------------
+
+\begin{document}
+
+  \begin{frame}[t] 
+    \maketitle
+  \end{frame}
+
+
+  \begin{frame}[t,plain]{Contents}
+   	\tableofcontents
+  \end{frame}
+
+  
+%%Sección 1
+\section{Section 1}
+
+  \begin{frame}[t,plain]
+    \lipsum[1]
+  \end{frame}
+   
+   
+   
+   
+%%Sección 2
+\section{Section 2}
+
+   \begin{frame}[t,plain]
+   	\lipsum[2]
+   \end{frame}
+
+
+  %%% Subsección 2.1
+  \subsection{Subsection 2.1}
+  \begin{frame}{}
+  	\lipsum[3]
+  \end{frame}
+  
+  %%% Subsección 2.2
+  \subsection{Subsection 2.2}
+  \begin{frame}{}
+  	\lipsum[4]
+  \end{frame}
+
+
+  %%% Subsección 2.3
+  \subsection{Subsection 2.3}
+  \begin{frame}{}
+  	\lipsum[5]
+  \end{frame}
+  
+  
+  %%% Subsección 2.4
+  \subsection{Subsection}
+  \begin{frame}{}
+  	\lipsum[6]
+  \end{frame}
+  
+  
+  %%% Subsección 2.5
+  \subsection{Subsection 2.5}
+  \begin{frame}{}
+  	\lipsum[7]
+  \end{frame}
+  
+
+
+
+
+%% Sección 3
+\section{Section 3}
+
+\begin{frame}[t,plain]
+	\lipsum[8]
+\end{frame}
+
+
+
+
+
+%% Referencias
+
+\begin{frame}[t, plain]{Reference}
+  \begin{itemize}
+    \item Ref 1
+    \item Ref 2
+    \item Ref 3, etc.
+  \end{itemize}
+\end{frame}
+    
+    
+ 
+    
+\end{document}

@@ -1,0 +1,88 @@
+% Preamble
+    \documentclass[aspectratio=169]{beamer}
+    \usepackage[utf8]{inputenc}
+    % Import packages
+        \usepackage{multimedia}
+        \usepackage{hyperref}
+        \usepackage{xcolor}
+        \usepackage{graphicx}
+        \usepackage{lipsum}
+    % Notes
+        \usepackage{pgfpages}
+    % Beamer theme
+        \usetheme[progressbar=frametitle]{metropolis}
+        \setbeamertemplate{frame numbering}[fraction]
+        \definecolor{primary}{RGB}{245, 10, 10}
+        \setbeamercolor{palette primary}{bg=white, fg=black}
+        \setbeamercolor{background canvas}{parent=palette primary}
+        \setbeamercolor{normal text}{fg=black}
+        \setbeamercolor{progress bar}{use=palette primary,fg=primary}
+    % Title page
+        \title{Title}
+        \subtitle{Subtitle}
+        \author[A-N]{Author - Name}
+        \institute{
+            University\\
+            Faculty\\
+            Professional School
+        }
+        \date{\today}
+% Slides
+\begin{document}
+    % title
+    \begin{frame}
+        \titlepage
+    \end{frame}
+    % table of contents
+    \begin{frame}{Table of Contents}
+        \tableofcontents
+    \end{frame}
+    % Section 1
+    \section{Section 1}
+        \begin{frame}
+            \lipsum[1]
+        \end{frame}
+        % Subsection 1.1
+        \subsection{Subsection 1.1}
+            \begin{frame}{Subsection 1.1}
+                \begin{itemize}
+                    \item Item 1
+                    \item Item 2
+                    \item Item 3
+                \end{itemize}
+            \end{frame}
+        % Subsection 1.2    
+        \subsection{Subsection 1.2}
+            \begin{frame}{Subsection 1.2}
+                \begin{enumerate}
+                    \item Enumerate 1
+                    \item Enumerate 2
+                    \item Enumerate 3
+                    \item Enumerate 4
+                \end{enumerate}
+            \end{frame}
+    % Section 2
+    \section{Section 2}
+        \begin{frame}
+            \lipsum[2]
+        \end{frame}
+        % Subsection 2.1
+        \subsection{Subsection 2.1}
+            \begin{frame}{Subsection 2.1}
+                \begin{itemize}
+                    \item Item 1
+                    \item Item 2
+                    \item Item 3
+                \end{itemize}
+            \end{frame}
+        % Subsection 2.2    
+        \subsection{Subsection 2.2}
+            \begin{frame}{Subsection 2.2}
+                \begin{enumerate}
+                    \item Enumerate 1
+                    \item Enumerate 2
+                    \item Enumerate 3
+                    \item Enumerate 4
+                \end{enumerate}
+            \end{frame}
+\end{document}
